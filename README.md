@@ -25,4 +25,5 @@ Configuration is done via exposed Environment variables:
 | --- | --- | --- | --- |
 | EMAIL | string | user@example.com | Letsencrypt registrations will use this email |
 | TCP_PORT | integer | 443 | port it should listen on |
-| HTTP_REDIRECT | boolean | true | Redirect port 80 to TCP_PORT |
+| HTTP_REDIRECT | boolean | true | Redirect http to TCP_PORT |
+| REDIRECT_PORT | integer | 80 | http trafic port |
