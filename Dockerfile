@@ -11,6 +11,8 @@ ADD . /usr/src/myapp
 
 WORKDIR /usr/src/myapp
 
+EXPOSE 8443
+
 RUN ["npm", "install"]
 
 CMD ["npm", "start"]

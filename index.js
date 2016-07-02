@@ -4,7 +4,7 @@ const logger = require('./lib/logger')();
 const Proxy = require('./lib/proxy');
 
 const email = process.env.EMAIL || '';
-const port = process.env.TCP_PORT || 443; // default ssl port
+const port = process.env.TCP_PORT || 8443; // default ssl port
 const redirect = /true/i.test(process.env.HTTP_REDIRECT);
 
 logger.info('Using config:', {
